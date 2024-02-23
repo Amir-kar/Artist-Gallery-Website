@@ -1,0 +1,75 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://kit.fontawesome.com/9f208a83f7.js" crossorigin="anonymous"></script>
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <script type="text/javascript"
+            th:src="@{https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js}"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link th:href="@{/css/web.css}" rel="stylesheet">
+</head>
+<body>
+<div id="overlappland" class="overlay">
+    <button class="getover" onclick="playCoolAni()">
+        <a href="javascript:void(0)" class="closebtn">&times;</a></button>
+    <div class="overlay-content">
+        <div id="div1"></div>
+        <div class="container  text-dark">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-11 col-lg-9 col-xl-7">
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <div class="d-flex flex-start w-100">
+<!--                                <img class="rounded-circle shadow-1-strong me-3"-->
+<!--                                     src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(21).webp" alt="avatar"-->
+<!--                                     width="65"-->
+<!--                                     height="65"/>-->
+                                <div class="w-100">
+                                    <h5>Add a comment</h5>
+                                    <div class="form-outline">
+                                        <textarea class="form-control" id="createCom" rows="4"
+                                                  placeholder="What do you think?"></textarea>
+                                        <label class="form-label" for="createCom"></label>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-3">
+                                        <button type="button" class="btn btn-danger" id="sendCom">
+                                            Send <i class="fas fa-long-arrow-alt-right ms-1"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container py-5 text-dark ">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-11 col-lg-9 col-xl-7">
+
+                    <div id="inner">
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div id="addPosts">
+
+    </div>
+    <div id="addRow">
+
+    </div>
+</div>
+
+<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/webjs.js}"></script>
+
+</body>
+</html>

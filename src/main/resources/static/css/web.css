@@ -1,0 +1,178 @@
+body {
+    font-family: Arial;
+    margin: 0;
+}
+body{
+background:gray;
+}
+* {
+    box-sizing: border-box;
+
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+.frontImg{
+
+            max-height: 80vh;
+            object-fit:contain;
+}
+
+        /* Hide the images by default */
+        /*.mySlides {
+          display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+          float: left;
+          width: 16.66%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+        .overlappland {
+        top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+
+        position: absolute;
+        background-color:black;
+        }
+        .overlappland-2 {
+                top: 0;
+                  left: 0;
+                  right: 0;
+                  bottom: 0;
+                width:100%;
+                height:100%;
+                position: fixed;
+                background-color:black;
+                }
+        .initiallyHidden { display: none; }
+.test {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:70%;
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}}
+.hover-vote{
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px;
+      }
+.vote:hover .hover-vote {
+    visibility: visible;
+}
+.link-muted { color: #a2a2a2 } .link-muted:hover { color: #5d5d5d }
+.noButton{color: #5d5d5d}
